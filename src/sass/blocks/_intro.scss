@@ -1,0 +1,87 @@
+.intro {
+    padding-top: 131px;
+    background-image: url('../img/backgrounds/layers.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &__wrapper {
+        position: absolute;
+        bottom: 68px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__arrow {
+        border: none;
+        background: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        &_left {
+            left: -26px;
+        }
+        &_right {
+            right: -26px;
+        }
+    }
+    &__dots {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex !important;
+        li {
+            margin-left: 2px;
+            margin-right: 2px;
+            display: flex;
+            align-items: center;
+            button {
+                font-size: 0;
+                background-color: transparent;
+                width: 11px;
+                height: 11px;
+                border: 1px solid #fff;
+                border-radius: 100%;
+                padding: 0;
+                transition: all .25s;
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+            &.slick-active {
+                button {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    &-slide {
+        display: flex;
+        justify-content: space-between;
+        &__text {
+            width: 560px;
+        }
+        &__title {
+            font-size: 42px;
+            line-height: 48px;
+            font-weight: 900;
+            color: #ffffff;
+            margin-top: 106px;
+            margin-bottom: 0;
+        }
+        &__subtitle {
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 400;
+            color: #ffffff;
+            margin-top: 27px;
+            margin-bottom: 0;
+            span {
+                font-weight: 300;
+            }
+        }
+    }
+    &__button {
+        margin-top: 39px;
+    }
+}

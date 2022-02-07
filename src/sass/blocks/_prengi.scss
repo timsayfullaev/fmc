@@ -1,0 +1,59 @@
+.prengi {
+    padding-top: 79px;
+    padding-bottom: 81px;
+    &__item {
+        width: 360px;
+        height: 255px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+        padding-top: 176px;
+        padding-left: 55px;
+        padding-right: 55px;
+        margin-top: 37px;
+        &_1 {
+            background-image: url('../img/without/rounded_rectangle_6_copy_2_251.jpg');
+        }
+        &_2 {
+            background-image: url('../img/without/rounded_rectangle_6_copy_247.jpg');
+        }
+        &_3 {
+            background-image: url('../img/without/rounded_rectangle_6_236.jpg');
+        }
+        &_4 {
+            background-image: url('../img/with/rounded_rectangle_6_copy_4_273.jpg');
+        }
+        &_5 {
+            background-image: url('../img/with/rounded_rectangle_6_copy_3_270.jpg');
+        }
+        &_6 {
+            background-image: url('../img/with/rounded_rectangle_6_copy_5_276.jpg');
+        }
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+        color: #393939;
+        text-align: center;
+        margin-bottom: 0;
+        &_bold {
+            font-weight: 700;
+        }
+    }
+    &__arrows {
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    &__title {
+        font-size: 48px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #393939;
+        text-align: center;
+        margin-top: 33px;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,22 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/bootstrap-grid.min';
+@import 'libs/font';
+@import 'libs/slick';
+
+@import 'base/variables';
+
+* {
+    font-family: 'Roboto';
+}
+
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/intro';
+@import 'blocks/button';
+@import 'blocks/prengi';
+@import 'blocks/solution';
+@import 'blocks/title';
+@import 'blocks/advantages';
+@import 'blocks/variants';
+@import 'blocks/start';
+@import 'blocks/footer';

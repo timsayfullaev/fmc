@@ -1,0 +1,85 @@
+.solution {
+    padding-top: 79px;
+    padding-bottom: 61px;
+    background-image: url('../img/backgrounds/layers (1).jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__navigation {
+        max-width: 843px;
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+        margin: 0 auto;
+        margin-top: 25px;
+        padding-top: 7px;
+        padding-bottom: 8px;
+        .slick-track {
+            width: auto !important;
+            display: flex;
+            justify-content: center;
+        }
+        .slick-slide {
+            font-size: 14px;
+            line-height: 25px;
+            font-weight: 400;
+            color: #ffffff;
+            text-align: center;
+            border-right: 1px solid rgba(255, 255, 255, 0.3);
+            padding-top: 14px;
+            padding-bottom: 14px;
+            padding-right: 24px;
+            padding-left: 24px;
+            width: auto !important;
+            transition: all .25s;
+            cursor: pointer;
+            &:last-child {
+                border-right: none;
+            }
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+    &__wrapper {
+        width: 947px;
+        height: 560px;
+        margin: 0 auto;
+        margin-top: 36px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    &__overlay {
+        background-image: url('../img/macbook_air_290.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+    &__slider {
+        width: 947px;
+        padding-top: 37px;
+        .slick-list {
+            width: 695px;
+            height: 460px;
+            margin: 0 auto;
+        }
+    }
+    &__arrow {
+        border: none;
+        background: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        &_left {
+            left: -59px;
+        }
+        &_right {
+            right: -59px;
+        }
+    }
+}

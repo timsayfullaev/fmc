@@ -1,0 +1,39 @@
+.header {
+    position: relative;
+    &__top {
+        padding-top: 19px;
+        padding-bottom: 19px;
+        background-color: #fff;
+    }
+    &__flags {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-flag {
+        display: flex;
+        &__icon {
+            margin-right: 11px;
+        }
+        &__country {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 700;
+            color: #242424;
+        }
+        &__contact {
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+    &__bottom {
+        padding-top: 39px;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
