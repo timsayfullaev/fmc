@@ -1,0 +1,47 @@
+@media (max-width: 1199px) {
+    .header {
+        &__top {
+            display: none;
+        }
+    }
+
+    .intro {
+        &-slide {
+            &__text {
+                width: 540px;
+            }
+            &__image {
+                width: 340px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .solution {
+        &__wrapper {
+            width: 828px;
+        }
+    }
+
+    .advantages {
+        &__wrapper {
+            grid-template-columns: repeat(2,466px);
+        }
+        &__title {
+            padding-left: 26px;
+            padding-right: 26px;
+        }
+    }
+
+    .variants {
+        &__text {
+            width: 388px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    
+}
