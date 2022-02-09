@@ -9,6 +9,10 @@
     font-family: 'Roboto';
 }
 
+.hamburger {
+    display: none;
+}
+
 @import 'blocks/header';
 @import 'blocks/nav';
 @import 'blocks/intro';

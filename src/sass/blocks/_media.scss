@@ -21,7 +21,15 @@
 
     .solution {
         &__wrapper {
-            width: 828px;
+            width: 826px;
+            height: 490px;
+        }
+        &__slider {
+            padding-top: 32px;
+            .slick-list {
+                width: 610px;
+                height: 382px;
+            }
         }
     }
 
@@ -43,5 +51,300 @@
 }
 
 @media (max-width: 991px) {
-    
+    .nav {
+        &__item {
+            margin-left: 23px;
+        }
+    }
+
+    .intro {
+        padding-top: 162px;
+        padding-bottom: 131px;
+        &-slide {
+            &__text {
+                width: 100%;
+                text-align: center;
+            }
+            &__title {
+                margin-top: 0;
+            }
+            &__image {
+                display: none;
+            }
+        }
+    }
+
+    .solution {
+        &__navigation {
+            .slick-slide {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+        }
+        &__wrapper {
+            width: 590px;
+            height: 350px;
+        }
+        &__slider {
+            padding-top: 23px;
+            .slick-list {
+                width: 436px;
+                height: 272px;
+            }
+        }
+    }
+
+    .advantages {
+        padding-bottom: 0;
+        &__wrapper {
+            grid-template-columns: repeat(2,346px);
+            grid-template-rows: repeat(3,256px);
+        }
+        .advantages__title {
+            height: 120px;
+            font-size: 17px;
+        }
+    }
+
+    .variants {
+        padding-bottom: 0;
+        .title {
+            color: #393939;
+        }
+        &__wrapper {
+            flex-direction: column;
+            position: static;
+            margin-top: 44px;
+        }
+        &__item {
+            height: 270px;
+        }
+        &__text {
+            width: 478px;
+        }
+    }
+
+    .footer {
+        &__text {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        &__wrapper {
+            position: relative;
+        }
+    }
+
+    .nav {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: -100%;
+        background-color: $main-color;
+        transition: all .25s;
+        &_active {
+            left: 0;
+        }
+        &__list {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        &__item {
+            margin-left: 0;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        &__link {
+            display: block;
+            font-size: 18px;
+            &:hover {
+                color: #fff;
+            }
+        }
+        &__close {
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            top: 64px;
+            right: 64px;
+            span {
+                display: block;
+                background-color: #fff;
+                height: 2px;
+                &:first-child {
+                    transform: rotate(45deg) translate(10px, 10px);
+                }
+                &:last-child {
+                    transform: rotate(-45deg) translate(-9px,9px);
+                }
+            }
+        }
+    }
+
+    .hamburger {
+        display: block;
+        height: 24px;
+        width: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        span {
+            background-color: #fff;
+            height: 2px;
+        }
+    }
+
+    .intro {
+        &-slide__title {
+            font-size: 41px;
+        }
+    }
+
+    .solution {
+        &__navigation {
+            display: none;
+        }
+        &__wrapper {
+            width: 476px;
+            height: 282px;
+        }
+        &__slider {
+            padding-top: 18px;
+            .slick-list {
+                width: 352px;
+                height: 220px;
+            }
+        }
+        &__arrow {
+            &_left {
+                left: -25px;
+            }
+            &_right {
+                right: -25px;
+            }
+        }
+    }
+
+    .advantages {
+        &__wrapper {
+            grid-template-columns: repeat(1,400px);
+            grid-template-rows: repeat(6,248px);
+        }
+    }
+
+    .title {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 575px) {
+    .nav {
+        &__close { 
+            top: 32px;
+            right: 32px;
+        }
+    }
+
+    .intro {
+        padding-top: 125px;
+        padding-bottom: 85px;
+        &-slide {
+            &__title {
+                font-size: 38px;
+            }
+        }
+        &__wrapper {
+            bottom: 40px;
+        }
+    }
+
+    .prengi {
+        padding-top: 40px;
+        &__item {
+            width: 290px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+
+    .solution {
+        &__wrapper {
+            width: 290px;
+            height: 174px;
+        }
+        &__slider {
+            padding-top: 12px;
+            .slick-list {
+                width: 215px;
+                height: 135px;
+            }
+            .intro__dots {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -32px;
+            }
+        }
+    }
+
+    .title {
+        font-size: 23px;
+    }
+
+    .advantages {
+        &__wrapper {
+            grid-template-columns: repeat(1,290px);
+            grid-template-rows: repeat(6,180px);
+        }
+        &__title {
+            padding-left: 13px;
+            padding-right: 13px;
+        }
+    }
+
+    .variants {
+        &__item {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        &__text {
+            width: 100%;
+            text-align: center;
+        }
+        &__subtitle {
+            font-size: 22px;
+        }
+        &__square {
+            left: 50%;
+            transform: translateX(-50%);
+            right: auto;
+            top: auto;
+        }
+    }
+
+    .start {
+        &__image {
+            max-width: 100%;
+        }
+    }
+
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &-list {
+            margin-bottom: 16px;
+        }
+        &__divider {
+            margin-top: 22px;
+        }
+    }
 }

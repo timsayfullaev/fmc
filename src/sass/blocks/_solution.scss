@@ -41,7 +41,7 @@
         }
     }
     &__wrapper {
-        width: 947px;
+        width: 948px;
         height: 560px;
         margin: 0 auto;
         margin-top: 36px;
@@ -60,12 +60,17 @@
         z-index: 1;
     }
     &__slider {
-        width: 947px;
+        width: 100%;
         padding-top: 37px;
         .slick-list {
-            width: 695px;
-            height: 460px;
+            width: 698px;
+            height: 436px;
             margin: 0 auto;
+        }
+        .slick-slide {
+            img {
+                width: 100%;
+            }
         }
     }
     &__arrow {
